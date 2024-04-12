@@ -9,22 +9,26 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
 </head>
 <body class="ecran">
-    <header>
-        <nav class="navbar navbar-expand-lg bg-warning">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="page-presentation.html">Ma présentation</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                  <li class="nav-item navbar-brand custom-text-size">
-                    <a class="nav-link active" aria-current="page" href="mes-projets.html">Mes projets</a>
-                </ul>
-              </div>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-warning">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="formulaire.html"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="navbar-brand">
+                  <a class="nav-link active" aria-current="page" href="mes-projets.html">Mes projets</a>
+                </li>
+                <li class="navbar-brand">
+                  <a class="nav-link" href="page-presentation.html">Ma présentation</a>
+                </li>
+              </ul>
             </div>
-          </nav>
-    </header>
+          </div>
+        </nav>
+  </header>
     <div class="card">
       <div class="card-body">
         <h5 class="card-title">Formulaire de contact</h5>
@@ -36,29 +40,31 @@
           <input id="monPrenom" name="userName" value="" />
           <label class="couleurTexte" for="eMail">Votre adresse mail :</label>
           <input id="eMail" name="eMail" value="" />
+          <label class="couleurTexte" for="tel">Votre numéro de téléphone :</label>
+          <input id="tel" name="" value="" />
           <label class="couleurTexte" for="text">Votre message (optionel) :</label>
           <input id="text" name="text" value="" />
           <input type="submit" value="Envoyer !" />
         </form> 
       </div>
     </div>
-    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top bg-warning">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center border-bottom bg-warning">
       <div class="col-md-4 d-flex align-items-center">
         <span class="mb-3 mb-md-0 text-body-secondary">Developpé par Yannick Oudin</span>
       </div>
       <ul class="nav col-md-4 justify-content-end">
         <li class="ms-2">linkedin
           <a class= "text-body-secondary" href="https://www.linkedin.com/in/yannick-oudin-b8930a229/">
-            <svg class="bi" width="25" height="25">
-              <use xlink:src=""></use>
-            </svg>
+            <!-- <svg class="bi" width="25" height="25"> -->
+              <image xlink:src="public/linkedin.png" width="25" height="25"/>
+            <!-- </svg> -->
           </a>
         </li>
-        <li class="ms-3">github
+        <li class="ms-2">github
           <a class= "text-body-secondary" href="https://github.com/oudinyannick">
-            <svg class="bi" width="25" height="25">
-              <use xlink:href=""></use>
-            </svg>
+            <!-- <svg class="bi" width="25" height="25"> -->
+              <image xlink:href="public/github.png" width="25" height="25"/>
+            <!-- </svg> -->
           </a>
         </li>
       </ul>
