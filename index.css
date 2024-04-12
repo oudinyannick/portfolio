@@ -1,22 +1,24 @@
 html {
     height: 100%;
   }
-  body {
+body {
     min-height: 100%;
     margin: 0;
     padding: 0;
     position: relative;
   }
 
-body.ecran {
-    background-color: rgb(15, 5, 5);
+.card {
+    max-width: 20rem; 
+    max-height: 20rem;
+    margin-top: 2.5rem;
+    margin-left: 2.5rem;
+    margin-bottom: 2.5rem;
+    overflow: scroll;
 }
 
-.card {
-    justify-content: center;
-    margin-top: 15rem;
-    margin-left: 10rem;
-    margin-right: 10rem;
+body.screen {
+    background-color: rgb(15, 5, 5);
 }
 
 h5.card-title {
