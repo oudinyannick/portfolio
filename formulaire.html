@@ -1,69 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio de Yannick Oudin</title>
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
-</head>
-<body class="screen">
-  <header>
-    <nav class="navbar navbar-expand-lg bg-warning">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="formulaire.html"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav">
-                <li class="navbar-brand">
-                  <a class="nav-link active" aria-current="page" href="mes-projets.html">Mes projets</a>
-                </li>
-                <li class="navbar-brand">
-                  <a class="nav-link active" href="page-presentation.html">Ma présentation</a>
-                </li>
-              </ul>
-            </div>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="screen">
+    <header>
+      <nav class="navbar navbar-expand-lg bg-warning">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="formulaire.html"></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="navbar-brand">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="mes-projets.html"
+                  >Mes projets</a
+                >
+              </li>
+              <li class="navbar-brand">
+                <a class="nav-link active" href="page-presentation.html"
+                  >Ma présentation</a
+                >
+              </li>
+            </ul>
           </div>
-        </nav>
-  </header>
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title">Formulaire de contact</h5>
-        <p class="card-text"><strong>merci de remplir tout les champs</strong></p>
-        <form id="monFormulaire">
-          <label class="couleurTexte" for="monNom">Votre nom :</label>
-          <input id="monNom" name="name" value="" />
-          <label class="couleurTexte" for="monPrenom">Votre prénom :</label>
-          <input id="monPrenom" name="userName" value="" />
-          <label class="couleurTexte" for="eMail">Votre adresse mail :</label>
-          <input id="eMail" name="eMail" value="" />
-          <label class="couleurTexte" for="tel">Votre numéro de téléphone :</label>
-          <input id="telephone" name="" value="" />
-          <label class="couleurTexte" for="text">Votre message (optionel) :</label>
-          <input id="text" name="text" value="" />
-          <input type="submit" value="Envoyer !" />
-        </form> 
+        </div>
+      </nav>
+    </header>
+    <div class="container-formulaire">
+      <div class="card-taille">
+        <div class="card-body">
+          <h5 class="card-title">Formulaire de contact</h5>
+          <form action="/ma-page-de-traitement" method="post">
+            <ul class="couleurTexte">
+              <li class="position1">
+                <label for="name">Votre nom:</label>
+                <input type="text" id="name" name="user_name" />
+              </li>
+              <li class="position1">
+                <label for="userName">Votre prénom:</label>
+                <input type="text" id="userName" name="user_name" />
+              </li>
+              <li class="position2">
+                <label for="mail">Votre e-mail:</label>
+                <input type="email" id="mail" name="user_mail" />
+              </li>
+              <li class="position2">
+                <label for="telephone">Téléphone:</label>
+                <input
+                  type="telephone"
+                  id="telephone"
+                  name="telephone_number"
+                />
+              </li>
+              <li class="position3">
+                <label for="msg" class="position">Votre message:</label>
+                <textarea id="msg" name="user_message"></textarea>
+              </li>
+            </ul>
+          </form>
+        </div>
       </div>
     </div>
-    <footer class="d-flex flex-wrap justify-content-between align-items-center border-top bg-warning">
+    <footer
+      class="d-flex flex-wrap justify-content-between align-items-center border-top bg-warning"
+    >
       <div class="col-md-4 d-flex align-items-center">
-        <span class="mb-3 mb-md-0 text-body-secondary">Developpé par Yannick Oudin</span>
+        <span class="mb-3 mb-md-0 text-body-secondary"
+          >Developpé par Yannick Oudin</span
+        >
       </div>
       <ul class="nav col-md-4 justify-content-end">
         <li class="ms-2">
-          <a class= "text-body-secondary" href="https://www.linkedin.com/in/yannick-oudin-b8930a229/">
-            <img src="public/linkedin (1).png" alt="logo">
+          <a
+            class="text-body-secondary"
+            href="https://www.linkedin.com/in/yannick-oudin-b8930a229/"
+          >
+            <img src="public/linkedin (1).png" alt="logo" />
           </a>
         </li>
         <li class="ms-3">
-          <a class= "text-body-secondary" href="https://github.com/oudinyannick">
-            <img src="public/github (1).png" alt="logo">
+          <a class="text-body-secondary" href="https://github.com/oudinyannick">
+            <img src="public/github (1).png" alt="logo" />
           </a>
         </li>
       </ul>
     </footer>
-</body>
+  </body>
 </html>

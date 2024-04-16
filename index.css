@@ -1,17 +1,9 @@
-html {
-    height: 120%;
-}  
-
 body {
     min-height: 100%; 
     margin: 0;
     padding: 0;
     position: relative;
 } 
-
-.container {
-    display: flex;
-}
 
 h2.title {
     color: white;
@@ -21,17 +13,19 @@ h2.title {
 
 h3.title {
     color: white;
+    text-align: center;
     margin-top: 2.2rem;
     margin-left: 4rem;
 }
 
-p {
+p.description {
     color: white;
-    width: 50%;
+    margin-left: 1.5rem;
+    margin-right: 0.8rem;
+    margin-top: 4rem;
+    width: 100%;
     text-align: justify;
-    font-size: 1.8rem;
-
-   
+    font-size: 2rem;   
 }
 
 img {
@@ -40,37 +34,89 @@ img {
     padding-right: 1rem;
 } 
 
+.imageProfil {
+    width: 25rem;
+    height: 25rem;
+    border-radius: 50%;
+    margin-top: 2rem;
+    margin-bottom: 8rem;
+}
+
 .card {
     max-width: 20rem; 
     max-height: 20rem;
     margin-top: 2.5rem;
     margin-left: 2.5rem;
     margin-bottom: 2.5rem;
-    overflow: scroll;  
+    overflow: scroll;       
 }
 
-p.card-text {
-    font-size: 1.5rem;
+.marge {
+    margin-bottom:2.5rem;
 }
 
 body.screen {
     background-color: rgb(15, 5, 5);
+   
 }
 
 h5.card-title {
-    color: blueviolet;
+    color: blue;
     text-align: center;
-}
-
-label.couleurTexte {
-    color: brown;
+    margin-top: 1rem;
 }
 
 p.card-text {
-    color: red;
+    color: black;    
+}
+
+.card-taille {
+    width: 50rem;
+    height: 20rem;
+    background-color: blueviolet;
+
+}
+
+.container-presentation {
+    display: flex;
+    height: 100%;;
+}
+
+.container-formulaire {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12rem;
+}
+
+li.position1 {
+    margin-top: 1.5rem;
+    display: inline-block;
+    margin-right: 4rem;
+}
+
+li.position2 {
+    margin-top: 1.5rem;
+    display: inline-block;
+    margin-right: 4rem;
+}
+
+li.position3 {
+    margin-top: 1.5rem;
+    display: inline-block; 
+    margin-left: 15rem;
+    
+}
+
+label.position {
+    display: flex;
+    text-align: center;
+    
 }
 
 footer {
-    position: absolute; bottom: 0; left: 0; right: 0
+    padding: 0.5rem;   
 }
 
