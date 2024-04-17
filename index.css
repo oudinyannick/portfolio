@@ -24,12 +24,13 @@ p.description {
     margin-right: 0.8rem;
     margin-top: 4rem;
     width: 100%;
-    text-align: justify;
+    text-align:justify;
     font-size: 2rem;   
 }
 
-img {
+.card-img-top image {
     width: auto; 
+    height: 10rem;
     margin-right: 3rem;
     padding-right: 1rem;
 } 
@@ -73,13 +74,16 @@ p.card-text {
 .card-taille {
     width: 50rem;
     height: 20rem;
-    background-color: blueviolet;
-
+    background-color:aqua;
 }
 
 .container-presentation {
     display: flex;
     height: 100%;;
+}
+
+h5.card-title {
+    color: red;
 }
 
 .container-formulaire {
@@ -89,6 +93,7 @@ p.card-text {
     justify-content: center;
     align-items: center;
     margin-top: 12rem;
+    margin-bottom: 12rem;
 }
 
 li.position1 {
@@ -106,17 +111,23 @@ li.position2 {
 li.position3 {
     margin-top: 1.5rem;
     display: inline-block; 
-    margin-left: 15rem;
-    
+    margin-left: 15rem;   
 }
 
 label.position {
     display: flex;
-    text-align: center;
-    
+    text-align: center;    
+}
+
+input {
+    border-radius: 30%;
+}
+
+.champ {
+    margin-left: 20rem;
 }
 
 footer {
-    padding: 0.5rem;   
-}
+    padding: 0.5rem;        
+} 
 
